@@ -37,8 +37,13 @@ Luego de separar un conjunto de los datos (15% del total) para evaluación final
 [1] van Elk, M., & Snoek, L. (2020). The relationship between individual differences in gray matter volume and religiosity and mystical experiences: A preregistered voxel-based morphometry study. The European journal of neuroscience, 51(3), 850–865. https://doi.org/10.1111/ejn.14563
 
 [2] Owen AD, Hayward RD, Koenig HG, Steffens DC, Payne ME. Religious factors and hippocampal atrophy in late life. PLoS One. 2011 Mar 30;6(3):e17006. doi: 10.1371/journal.pone.0017006. PMID: 21479219; PMCID: PMC3068149.
+
 [3] Orrin Devinsky, George Lai, Spirituality and Religion in Epilepsy, Epilepsy & Behavior, Volume 12, Issue 4, 2008, Pages 636-643, ISSN 1525-5050.
+
 [4] Newberg A, Alavi A, Baime M, Pourdehnad M, Santanna J, d'Aquili E. The measurement of regional cerebral blood flow during the complex cognitive task of meditation: a preliminary SPECT study. Psychiatry Res. 2001 Apr 10;106(2):113-22. doi: 10.1016/s0925-4927(01)00074-9. PMID: 11306250.
+
 [5] Johnstone, Brick & Glass, Bret A. (2008). Support for a neuropsychological model of spirituality in persons with traumatic brain injury. Zygon 43 (4):861-874.
+
 [6] Brooks, S.J., Tian, L., Parks, S.M. et al. Parental religiosity is associated with changes in youth functional network organization and cognitive performance in early adolescence. Sci Rep 12, 17305 (2022). https://doi.org/10.1038/s41598-022-22299-6
+
 [7] https://www.o8t.com/blog/brain-networks#:~:text=Depending%20on%20the%20granularity%20of,network%20(DMN)%2C%20salience%20network
