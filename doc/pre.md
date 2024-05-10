@@ -24,10 +24,12 @@ El promedio por parcela del volumen de materia gris (```ParcelAggregation```) no
 
 Con estas 3 familias de atributos, podemos contabilizar tanto las relaciones funcionales locales (ReHo) como globales (conectividad funcional), así como la anatomía general del cerebro. De haber diferencias significativas en la predicción de religiosidad a partir de esos atributos, un estudio de ablación nos permitiría determinar cuáles de ellos son los que más aportan a la tarea de predicción.
 
+Para el caso de los atributos funcionales, se emplearán los confounds provistos por fMRIPrep para corregir ruido provocado por el movimiento de la cabeza y el líquido cerebroespinal, en conjunto a low- y high-pass filtering (0,08 y 0,01, respectivamente), y la máscara para el cerebro (ya computada) con un threshold de 0,0.
+
 Los datos clínicos que emplearemos como target son dos: si son religiosos y si fueron criados religiosamente (ambas constituyen tareas de clasificación). Estos análisis se realizarán con el mismo conjunto de atributos, pero con distintos modelos. Dado que el conjunto de personas religiosas es bajo (21% del total), balancearemos los datos empleando un mismo número de personas no religiosas, equiparando edad, sexo, niveles educativos y socioeconómicos con aquellos de las personas religiosas. Lo mismo se aplicará sobre los datos de personas criadas religiosamente (34.1% del total).
 
 
-Los algoritmos de aprendizaje automático a utilizar constituyen al Support Vector Machine (SVM) y Random Forest. Los datos serán normalizados a través de z-score previo a su entrenamiento. Para la elección final del modelo, la evaluación se realizará a través de las métricas accuracy, precision y recall.
+Los algoritmos de aprendizaje automático a utilizar constituyen al Support Vector Machine (SVM) y Random Forest. Se realizará un ajuste de hiperparámetros sobre el posible kernel y C (en el caso de SVM) y la altura del árbol (en el caso de Random Forest). Los datos serán normalizados a través de z-score previo a su entrenamiento. Para la elección final del modelo, la evaluación se realizará a través de las métricas accuracy, precision y recall.
 
 Luego de separar un conjunto de los datos (15% del total) para evaluación final, el esquema de entrenamiento será de evaluación cruzada con stratified K fold (5 folds). Se reportarán las métricas previamente mencionadas sobre el conjunto de datos apartado.
 
