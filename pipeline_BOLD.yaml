@@ -18,7 +18,7 @@ markers:
     parcellation: Yan700xYeo7
     using: junifer
 
-    - name: Yan700xYeo7_Mean
+  - name: Yan700xYeo7_Mean
     kind: FunctionalConnectivityParcels
     parcellation: Yan700xYeo7
     agg_method: mean
