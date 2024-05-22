@@ -1,0 +1,29 @@
+workdir: /tmp
+datagrabber:
+  kind: PatternDataladDataGrabber
+  uri: https://github.com/OpenNeuroDatasets/ds003097.git
+  patterns:
+    BOLD:
+      pattern: derivatives/fmriprep/{subject}/func/{subject}_task-moviewatching_space-T1w_desc-preproc_bold.nii.gz
+      space: MNI152NLin2009cAsym
+  replacements:
+    - subject
+  types:
+    - BOLD
+
+markers:
+
+  - name: ReHoParcels_Yan700xYeo7_junifer
+    kind: ReHoParcels
+    parcellation: Yan700xYeo7
+    using: junifer
+
+    - name: Yan700xYeo7_Mean
+    kind: FunctionalConnectivityParcels
+    parcellation: Yan700xYeo7
+    agg_method: mean
+    cor_method: covariance
+
+storage:
+  kind: HDF5FeatureStorage
+  uri: ../path..../ds003097_bold.hdf5
