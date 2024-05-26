@@ -1,4 +1,5 @@
 workdir: /tmp
+
 datagrabber:
   kind: PatternDataladDataGrabber
   uri: https://github.com/OpenNeuroDatasets/ds003097.git
@@ -10,13 +11,13 @@ datagrabber:
     - subject
   types:
     - VBM_GM
-markers:
 
-  - name: ParcelAggregation_Yan700xYeo7_Mean
+markers:
+  - name: ParcelAggregation_Yan100xYeo7_Mean
     kind: ParcelAggregation
-    parcellation: Yan700xYeo7
+    parcellation: Yan100xYeo7
     method: mean
 
 storage:
   kind: HDF5FeatureStorage
-  uri: ../path..../ds003097_VBM_GM.hdf5
+  uri: /home/laouen.belloli/Documents/materias/picml/aomic_vbm_gm.hdf5
